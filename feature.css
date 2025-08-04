@@ -1,0 +1,236 @@
+@media (max-width: 768px) {
+
+            /* Reduce main feature card height */
+            .mobile-feature-container {
+                height: auto !important;
+            }
+
+            .mobile-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .mobile-box {
+                width: 100% !important;
+                height: auto !important;
+                padding: 1rem !important;
+                text-align: center !important;
+            }
+
+            .mobile-text-box {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .mobile-overlap-img {
+                margin-top: 1rem !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .mobile-image-col {
+                width: 100% !important;
+                height: auto !important;
+                margin-left: 0 !important;
+            }
+
+            .mobile-section-wrapper {
+                flex-direction: column !important;
+            }
+        }
+
+
+        .testimonial-card {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card-center {
+            transform: scale(1);
+            opacity: 1;
+            z-index: 10;
+        }
+
+        .card-side {
+            transform: scale(0.8);
+            opacity: 0.6;
+            z-index: 5;
+        }
+
+        .button-image {
+            filter: grayscale(100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-item.active .button-image {
+            filter: grayscale(0%) brightness(1.1) saturate(1.2);
+        }
+
+        .button-item {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-item.active {
+            background-color: rgb(239 246 255);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Additional styling for smooth animations */
+        .testimonial-slide {
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Hover effects for cards */
+        .bg-blue-50:hover {
+            background-color: rgb(239 246 255);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .bg-gray-100:hover {
+            background-color: rgb(243 244 246);
+            transition: all 0.3s ease;
+        }
+
+
+        /* Additional styling for smooth animations */
+        .testimonial-slide {
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Hover effects for cards */
+        .bg-blue-50:hover {
+            background-color: rgb(239 246 255);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .bg-gray-100:hover {
+            background-color: rgb(243 244 246);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            footer .flex.items-center.space-x-2 img {
+                width: 20px;
+                height: auto;
+            }
+
+            footer .flex.items-center.space-x-2 span,
+            footer .flex.items-center.space-x-2 a {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 2rem 1rem;
+            }
+
+            footer .grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem;
+            }
+
+            footer .space-y-4 img,
+            footer .text-sm,
+            footer h4,
+            footer ul li a,
+            footer input,
+            footer button,
+            footer p {
+                text-align: center;
+                width: 100%;
+            }
+
+            footer .space-y-4,
+            footer .space-y-2 {
+                align-items: center;
+                text-align: center;
+            }
+
+            footer .flex.items-center.space-x-2 {
+                justify-content: center;
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+
+            footer .text-gray-700 span,
+            footer .text-gray-700 a {
+                display: block;
+            }
+
+            footer .bg-blue-50 {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            footer .bg-blue-50 .flex.items-center.space-x-8 {
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            h2.text-5xl {
+                font-size: 1.5rem !important;
+                /* text-2xl */
+                text-align: center;
+            }
+
+            .faq-toggle {
+                font-size: 1rem !important;
+                /* text-base */
+                padding: 1rem !important;
+            }
+
+            .faq-content {
+                font-size: 0.875rem !important;
+                /* text-sm */
+            }
+
+            .faq-content ul li span {
+                font-size: 0.875rem !important;
+                /* text-sm */
+            }
+
+            .filter-btn {
+                font-size: 0.75rem !important;
+                /* text-xs */
+                padding: 0.5rem 1rem !important;
+            }
+
+            button.px-10 {
+                padding: 0.5rem 1.25rem !important;
+                font-size: 0.875rem !important;
+                /* text-sm */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-hide {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .responsive-stack {
+                flex-direction: column !important;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .responsive-stack h2 {
+                font-size: 1.5rem !important;
+                /* Optional: reduce heading size */
+            }
+
+            .responsive-stack button {
+                width: auto;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        

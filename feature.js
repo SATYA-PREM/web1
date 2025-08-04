@@ -206,6 +206,18 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
     icon.textContent = content.classList.contains('hidden') ? '+' : '–';
   });
 });
+document.querySelectorAll('.faq-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.toggle-icon');
+
+    // Toggle the visibility of the content
+    content.classList.toggle('hidden');
+
+    // Change the icon between + (minimized) and – (maximized)
+    icon.textContent = content.classList.contains('hidden') ? '+' : '–';
+  });
+});
 document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('.testimonial-card');
   const prevBtn = document.getElementById('prevTestimonial');
@@ -337,15 +349,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-document.querySelectorAll('.faq-toggle').forEach(button => {
-  button.addEventListener('click', () => {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector('.toggle-icon');
 
-    // Toggle the visibility of the content
-    content.classList.toggle('hidden');
+ const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    // Change the icon between + (minimized) and – (maximized)
-    icon.textContent = content.classList.contains('hidden') ? '+' : '–';
+  toggleButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
-});
+
