@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookout AI - Hire Smarter. Hire Faster. With AI.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Your JS file -->
+    <script src="feature.js" defer></script>
+
+    <style>
+        .testimonial-card {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card-center {
+            transform: scale(1);
+            opacity: 1;
+            z-index: 10;
+        }
+
+        .card-side {
+            transform: scale(0.8);
+            opacity: 0.6;
+            z-index: 5;
+        }
+
+        .button-image {
+            filter: grayscale(100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-item.active .button-image {
+            filter: grayscale(0%) brightness(1.1) saturate(1.2);
+        }
+
+        .button-item {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-item.active {
+            background-color: rgb(239 246 255);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Additional styling for smooth animations */
+        .testimonial-slide {
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Hover effects for cards */
+        .bg-blue-50:hover {
+            background-color: rgb(239 246 255);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .bg-gray-100:hover {
+            background-color: rgb(243 244 246);
+            transition: all 0.3s ease;
+        }
+
+
+        /* Additional styling for smooth animations */
+        .testimonial-slide {
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Hover effects for cards */
+        .bg-blue-50:hover {
+            background-color: rgb(239 246 255);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .bg-gray-100:hover {
+            background-color: rgb(243 244 246);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-[linear-gradient(52.89deg,_#EBEAFF_27.79%,_#F7F6FF_47.06%,_#F6F4FF_62.07%,_#E6E2FF_79.83%)]">
+        <div class="relative w-full rounded-3xl overflow-hidden ">
+            <!-- Background Image -->
+            <img src="image (232).png" alt="3D Character" class="w-full h-full object-cover absolute inset-0 z-0" />
+
+
+
+            <header class="w-full px-4 py-4 relative z-10">
+                <nav class="max-w-7xl mx-auto flex items-center justify-between">
+                    <!-- Logo Section -->
+                    <div class="flex items-center space-x-3">
+                        <div>
+                            <img src="image (22).png" class="w-16 h-auto" alt="Descriptive alt text">
+                        </div>
+                        <div>
+                            <img src="image (322).png" class="w-48 h-auto" alt="Descriptive alt text">
+                        </div>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <div
+                        class="hidden md:flex items-center bg-white backdrop-blur-sm rounded-full px-8 py-2.5 h-[48px]">
+                        <div class="flex space-x-8">
+                            <a href="index.html" class="text-black text-sm font-medium">Home</a>
+                            <a href="#" class="text-black text-sm font-medium">Features</a>
+                            <a href="#" class="text-black text-sm font-medium">Resources</a>
+                            <a href="#" class="text-black text-sm font-medium">Company</a>
+                            <a href="#" class="text-black text-sm font-medium">ROI Calculator</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="flex items-center space-x-2 rounded-[40px] bg-white px-2 py-2.5 h-[50px]">
+                        <a href="#"
+                            class="bg-gradient-to-b from-indigo-200 to-indigo-100 text-black px-4 py-2 rounded-[30px] text-sm font-medium hover:from-indigo-300 hover:to-indigo-200 transition-all">
+                            Login/Signup
+                        </a>
+                        <button
+                            class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium">
+                            Book a demo
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <!-- Main Hero Section -->
+            <main class="flex-1 px-6">
+                <div class="max-w-4xl mx-auto text-center py-[70px]">
+                    <!-- Badge -->
+                    <!-- Main Heading -->
+                    <h1 class="text-5xl md:text-7xl lg:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+                        The Suite That Replaces <br>
+                        YourEntire Hiring Stack.<br>
+
+                    </h1>
+
+                    <!-- Decorative Wave -->
+                    <div class="flex justify-center mb-8">
+                        <img src="image.png" class="w-32 h-auto" alt="Descriptive alt text">
+
+                    </div>
+
+                    <!-- Subtitle -->
+                    <p class="text-2xl text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed">
+                        From first search to final hire, LookoutAI replaces all your sourcing, <br>messaging, and market
+                        tools in one clean interface.
+                    </p>
+
+                    <div class="flex justify-center mt-8 mb-12  ">
+                        <button
+                            class="bg-opacity-100 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:from-purple-700 hover:to-blue-700 transition duration-300 shadow-md">
+                            Request Demo
+                        </button>
+                    </div>
+
+
+
+                    <div
+                        class="bg-white border border-gray-200 border-[5px] rounded-[25px] px-[5px] max-w-4xl mx-auto min-h-[10rem] relative">
+
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-1">
+                                <input type="text"
+                                    placeholder="Ask Luca to find a Senior manager in Toronto with 6+ years of experience"
+                                    class="w-full rounded-[25px] px-4 py-4 text-gray-800 placeholder-gray-300 bg-white border-0 focus:outline-none text-lg" />
+                            </div>
+                        </div>
+
+                        <button
+                            class="absolute bottom-4 right-4 bg-violet-600 text-white text-[15px] font-medium px-2 py-2 rounded-[30px] flex items-center space-x-2">
+                            <img src="chat.png" class="w-8 h-auto" alt="Chat icon">
+                            <span>Chat With Luca</span>
+                            <img src="arrow.png" class="w-8 h-auto" alt="Arrow icon">
+                        </button>
+                    </div>
+
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <!-- Video Frame -->
+        <video id="previewVideo" src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
+            alt="Preview Video" class="m-[40px] w-[1200px] h-[520px] object-contain rounded-lg" controls
+            poster="image (8).png" muted>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="w-full bg-gray-50 py-10">
+        <!-- All Features Section Wrapper -->
+        <div class="space-y-10">
+
+            <!-- Section 1: Smart Match -->
+            <div class="max-w-5xl mx-auto px-4 py-4 text-center bg-white rounded-2xl">
+                <span
+                    class="inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold text-white bg-[linear-gradient(45deg,_#FF8C00,_#8B00FF)]">
+                    Smart Match
+                </span>
+                <h1 class="text-4xl font-bold text-gray-800 mb-3">
+                    Find your dream hire before your coffee gets cold.
+                </h1>
+                <p class="text-[20px] text-gray-600 mb-6">
+                    Discover the features that will transform the way you recruit.
+                </p>
+
+                <div
+                    class="flex flex-col md:flex-row gap-5 items-start md:items-start max-w-7xl mx-auto w-full h-[550px] justify-center">
+                    <!-- Column 1 -->
+                    <div class="flex-1 flex justify-center">
+                        <div class="flex flex-col items-center relative">
+                            <div class="z-10 relative">
+                                <img src="imae.png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                            </div>
+                            <div class="-mt-24 z-0 w-auto h-[40px]">
+                                <div class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-end">
+                                    <div class="text-3xl font-bold text-center mb-4">
+                                        No sifting through resumes
+                                    </div>
+                                    <p class="text-gray-800 text-center text-lg">
+                                        Endless job boards, keyword overload, and still...
+                                        <span class="font-semibold">no great fit?</span> With Smart Match, just describe
+                                        the role to
+                                        <span class="font-bold">LUCA</span>, we’ll serve up pre-matched, top-fit
+                                        candidates, fast.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="flex-1 flex justify-center">
+                        <div class="flex flex-col items-center relative">
+
+                            <!-- Top Div: Image only -->
+                            <div
+                                class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] w-[500px] flex flex-col justify-start items-center">
+
+                                <!-- Title -->
+                                <div class="text-3xl font-bold text-center mb-6">
+                                    Fast hiring, Smarter Results</div>
+
+                                <!-- Checkboxes Container -->
+                                <div class="flex flex-col justify-center items-start space-y-4">
+                                    <div class="flex items-center space-x-2">
+                                        <img src="image (3).png" alt="Progress Visual"
+                                            class="w-[20px] h-auto rounded-md" />
+                                        <span class="text-black">95% accurate matches</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <img src="image (3).png" alt="Progress Visual"
+                                            class="w-[20px] h-auto rounded-md" />
+                                        <span class="text-black">90% less time wasted</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <img src="image (3).png" alt="Progress Visual"
+                                            class="w-[20px] h-auto rounded-md" />
+                                        <span class="text-black">60% lower sourcing costs</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Bottom Div: Text Box Overlapping -->
+                            <div class="-mt-24 z-10 w-auto h-[40px] relative">
+                                <div class="z-0 relative">
+                                    <img src="image (49).png" alt="Progress Visual"
+                                        class="w-[1000px] h-[300px] rounded-md" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col md:flex-row mt-[20px] gap-5 items-start md:items-start max-w-7xl mx-auto w-full justify-center items-stretch">
+                    <!-- Column 1: Text -->
+                    <div class="w-[600px] h-[350px] flex justify-center items-center z-0">
+                        <div
+                            class="bg-blue-50 rounded-[30px] shadow-xl w-full h-full flex flex-col justify-center items-start px-14">
+                            <div class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-center">
+                                <div class="text-3xl font-bold text-center mb-4">
+                                    No more tool-hopping. </div>
+                                <p class="text-gray-800 text-center text-lg">
+                                    Everything you need to
+                                    <span class="font-semibold">source top talent,</span> right here, in one place. No
+                                    switching
+                                    tabs. No bouncing between tools!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Image (Wider) -->
+                    <div class="w-[700px] h-[350px] -ml-20 z-20 flex justify-center items-center">
+                        <div class="relative w-full h-full">
+                            <img src="image (50).png" alt="Progress Visual"
+                                class="w-full h-full object-cover rounded-[30px]" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <!-- Section 2: LUCA iChat -->
+        <div class="max-w-5xl mx-auto mt-[50px] px-4 py-4 text-center bg-white rounded-2xl">
+            <span
+                class="inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold text-white bg-[linear-gradient(45deg,_#FF8C00,_#8B00FF)]">
+                LUCA iChat
+            </span>
+            <h1 class="text-4xl font-bold text-gray-700 mb-3">
+                The recruiter that never runs out of words.
+            </h1>
+            <p class="text-[20px] text-gray-600 mb-6">
+                Recruitment Assistant built on the World's First Recruiter Language Model (RLM)
+            </p>
+            <div
+                class="flex flex-col md:flex-row gap-5 items-start md:items-start max-w-7xl mx-auto w-full h-[550px] justify-center">
+                <!-- Column 1 -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex flex-col items-center relative">
+                        <div class="z-10 relative">
+                            <img src="image (52).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                        </div>
+                        <div class="-mt-24 z-0 w-auto h-[40px]">
+                            <div class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-end">
+                                <div class="text-3xl font-bold text-center mb-4">
+                                    Fully Automated Recruiting Workflow </div>
+                                <p class="text-gray-800 text-center text-lg">
+                                    Outreach fatigue is real. iChat drafts personalized messages and job posts for you,
+                                    instantly. No repeats, no mistakes, just messages that sound like you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex flex-col items-center relative">
+
+                        <!-- Top Div: Image only -->
+                        <!-- Top Div: Image only -->
+                        <div
+                            class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] w-[500px] flex flex-col justify-start items-center">
+
+                            <!-- Title -->
+                            <div class="text-3xl font-bold text-center mb-6">
+                                Fast hiring, Smarter Results</div>
+
+                            <!-- Checkboxes Container -->
+                            <div class="flex flex-col justify-center items-start space-y-4">
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">70% less admin work</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">80% faster outreach</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">Personalized Messages</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Bottom Div: Text Box Overlapping -->
+                        <div class="-mt-24 z-10 w-auto h-[40px] relative">
+                            <div class="z-0 relative">
+                                <img src="image (53).png" alt="Progress Visual"
+                                    class="w-[1000px] h-[300px] rounded-md" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="flex flex-col md:flex-row mt-[20px] gap-5 items-start md:items-start max-w-7xl mx-auto w-full justify-center items-stretch">
+                <!-- Column 1: Text -->
+                <div class="w-[600px] h-[350px] flex justify-center items-center z-0">
+                    <div
+                        class="bg-blue-50 rounded-[30px] shadow-xl w-full h-full flex flex-col justify-center items-start px-14">
+                        <div class="text-3xl font-bold text-center mb-4">
+                            Get Built-In AI That Just Works. </div>
+                        <p class="text-gray-800 text-center text-lg">
+                            LookoutAI <b>iChat</b> delivers tailored, on-brand outreach—no prompts, no plugins, no
+                            fluff.<b>AI built for hiring.</b> Not hacked for it.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Image (Wider) -->
+                <div class="w-[700px] h-[350px] -ml-20 z-20 flex justify-center items-center">
+                    <div class="relative w-full h-full">
+                        <img src="image (64).png" alt="Progress Visual"
+                            class="w-full h-full object-cover rounded-[30px]" />
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Section 3: LUCA iFind -->
+        <div class="max-w-5xl mx-auto mt-[50px] px-4 py-4 text-center bg-white rounded-2xl">
+            <span
+                class="inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold text-white bg-[linear-gradient(45deg,_#FF8C00,_#8B00FF)]">
+                LUCA iFind
+            </span>
+            <h1 class="text-4xl font-bold text-gray-700 mb-3">
+                Real profiles. No spam. Just humans.
+            </h1>
+            <p class="text-[20px] text-gray-600 mb-6">
+                iFind verifies portfolios, social links, and even job activity to ensure you’re only seeing real,
+                active talent. No more ghost chasing.
+            </p>
+            <div
+                class="flex flex-col md:flex-row gap-5 items-start md:items-start max-w-7xl mx-auto w-full h-[550px] justify-center">
+                <!-- Column 1 -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex flex-col items-center relative">
+                        <div class="z-10 relative">
+                            <img src="image (54).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                        </div>
+                        <div class="-mt-24 z-0 w-auto h-[40px]">
+                            <div class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-end">
+                                <div class="text-3xl font-bold text-center mb-4">
+                                    Live Candidate Discovery </div>
+                                <p class="text-gray-800 text-center text-lg">
+                                    Pulls candidates directly from platforms like Linkedin, GitHub, and more - in
+                                    real-time - so you're never sourcing from stale data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex-1 flex justify-center">
+                    <div class="flex flex-col items-center relative">
+
+                        <!-- Top Div: Image only -->
+                        <div
+                            class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] w-[500px] flex flex-col justify-start items-center">
+
+                            <!-- Title -->
+                            <div class="text-3xl font-bold text-center mb-6">
+                                360° Profile Enrichment </div>
+
+                            <!-- Checkboxes Container -->
+                            <div class="flex flex-col justify-center items-start space-y-4">
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">0% fake candidates</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">Clean, fresh data</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                    <span class="text-black">Hire the real people</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Bottom Div: Text Box Overlapping -->
+                        <div class="-mt-24 z-10 w-auto h-[40px] relative">
+                            <div class="z-0 relative">
+                                <img src="image (56).png" alt="Progress Visual"
+                                    class="w-[1000px] h-[300px] rounded-md" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="flex flex-col md:flex-row mt-[20px] gap-5 items-start md:items-start max-w-7xl mx-auto w-full justify-center items-stretch">
+                <!-- Column 1: Text -->
+                <div class="w-[600px] h-[350px] flex justify-center items-center z-0">
+                    <div
+                        class="bg-blue-50 rounded-[30px] shadow-xl w-full h-full flex flex-col justify-center items-start px-14">
+                        <div class="text-3xl font-bold text-center mb-4">
+                            Boosted Response Rates </div>
+                        <p class="text-gray-800 text-center text-lg">
+                            Hyper-relevant targeting and personalized messaging drive a 50% increase in replies - no
+                            more shouting into the void.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Image (Wider) -->
+                <div class="w-[700px] h-[350px] -ml-20 z-20 flex justify-center items-center">
+                    <div class="relative w-full h-full">
+                        <img src="image (65).png" alt="Progress Visual"
+                            class="w-full h-full object-cover rounded-[30px]" />
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Section 4: LUCA Dfind -->
+    <div class="max-w-5xl mx-auto mt-[50px] px-4 py-4 text-center bg-white rounded-2xl">
+        <span
+            class="inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold text-white bg-[linear-gradient(45deg,_#FF8C00,_#8B00FF)]">
+            LUCA Dfind
+        </span>
+        <h1 class="text-4xl font-bold text-gray-700 mb-3">
+            The hiring market is not a mystery anymore.
+        </h1>
+        <p class="text-[20px] text-gray-600 mb-6">
+            Dfind gives you market trends, and talent availability so you can plan confidently, not guess
+            wildly.
+        </p>
+        <div
+            class="flex flex-col md:flex-row gap-5 items-start md:items-start max-w-7xl mx-auto w-full h-[550px] justify-center">
+            <!-- Column 1 -->
+            <div class="flex-1 flex justify-center">
+                <div class="flex flex-col items-center relative">
+                    <div class="z-10 relative">
+                        <img src="image (58).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                    </div>
+                    <div class="-mt-24 z-0 w-auto h-[40px]">
+                        <div class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-end">
+                            <div class="text-3xl font-bold text-center mb-4">
+                                Instant Talent Market Insights </div>
+                            <p class="text-gray-800 text-center text-lg">
+                                Access real-time data on salary trends, supply-demand ratios, and DEl metrics - all in
+                                one place, with zero guesswork.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex-1 flex justify-center">
+                <div class="flex flex-col items-center relative">
+
+                    <!-- Top Div: Image only -->
+                    <div
+                        class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] w-[500px] flex flex-col justify-start items-center">
+
+                        <!-- Title -->
+                        <div class="text-3xl font-bold text-center mb-6">
+                            Smarter Workforce Planning </div>
+
+                        <!-- Checkboxes Container -->
+                        <div class="flex flex-col justify-center items-start space-y-4">
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">85% better planning</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">40% fewer bad hires/span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">30% less time on research</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Bottom Div: Text Box Overlapping -->
+                    <div class="-mt-24 z-10 w-auto h-[40px] relative">
+                        <div class="z-0 relative">
+                            <img src="image (60).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div
+            class="flex flex-col md:flex-row mt-[20px] gap-5 items-start md:items-start max-w-7xl mx-auto w-full justify-center items-stretch">
+            <!-- Column 1: Text -->
+            <div class="w-[600px] h-[350px] flex justify-center items-center z-0">
+                <div
+                    class="bg-blue-50 rounded-[30px] shadow-xl w-full h-full flex flex-col justify-center items-start px-16">
+                    <div class="text-3xl font-bold text-center mb-4">
+                        Full Competitor Hiring Intel </div>
+                    <p class="text-gray-800 text-center text-lg">
+                        Stop Paying for Reports You’ll Read Once!! Get Live Market Intel Instead. With Dfind, you get
+                        real-time hiring intelligence, salaries, talent trends, competitor moves, all in one place.
+                </div>
+            </div>
+
+            <!-- Column 2: Image (Wider) -->
+            <div class="w-[700px] h-[350px] -ml-20 z-20 flex justify-center items-center">
+                <div class="relative w-full h-full">
+                    <img src="image (61).png" alt="Progress Visual" class="w-full h-full object-cover rounded-[30px]" />
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+    <div class="max-w-5xl mx-auto mt-[50px] px-4 py-4 text-center bg-white rounded-2xl">
+        <span
+            class="inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold text-white bg-[linear-gradient(45deg,_#FF8C00,_#8B00FF)]">
+            LUCA Dfind
+        </span>
+        <h1 class="text-4xl font-bold text-gray-700 mb-3">
+            The hiring market is not a mystery anymore.
+        </h1>
+        <p class="text-[20px] text-gray-600 mb-6">
+            Dfind gives you market trends, and talent availability so you can plan confidently, not guess
+            wildly.
+        </p>
+        <div
+            class="flex flex-col md:flex-row gap-5 items-start md:items-start max-w-7xl mx-auto w-full h-[550px] justify-center">
+            <!-- Column 1 -->
+            <div class="flex-1 flex justify-center">
+                <div class="flex flex-col items-center relative">
+                    <div class="z-10 relative">
+                        <img src="image (68).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                    </div>
+                    <div class="-mt-24 z-0 w-auto h-[40px] flex justify-center">
+                        <div
+                            class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] flex flex-col justify-end w-full max-w-xl">
+                            <div class="text-3xl font-bold text-center mb-4">
+                                Smarter Note Taking, Instantly
+                            </div>
+                            <p class="text-gray-800 text-center text-lg">
+                                Auto-generates job-specific pre-screening questions and also syncs seamlessly with
+                                Lookout AI product platform for faster, more inclusive evaluations.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex-1 flex justify-center">
+                <div class="flex flex-col items-center relative">
+
+                    <!-- Top Div: Image only -->
+                    <div
+                        class="bg-blue-50 rounded-[30px] shadow p-8 h-[350px] w-[500px] flex flex-col justify-start items-center">
+
+                        <!-- Title -->
+                        <div class="text-3xl font-bold text-center mb-6">
+                            Real-Time Notes, Zero Manual Effort
+                        </div>
+
+                        <!-- Checkboxes Container -->
+                        <div class="flex flex-col justify-center items-start space-y-4">
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">100% automated notes</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">60% faster evaluations</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <img src="image (3).png" alt="Progress Visual" class="w-[20px] h-auto rounded-md" />
+                                <span class="text-black">Zero missed details</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- Bottom Div: Text Box Overlapping -->
+                    <div class="-mt-24 z-10 w-auto h-[40px] relative">
+                        <div class="z-0 relative">
+                            <img src="image (62).png" alt="Progress Visual" class="w-[1000px] h-[300px] rounded-md" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div
+            class="flex flex-col md:flex-row mt-[20px] gap-5 items-start md:items-start max-w-7xl mx-auto w-full justify-center items-stretch">
+            <!-- Column 1: Text -->
+            <div class="w-[600px] h-[350px] flex justify-center items-center z-0">
+                <div
+                    class="bg-blue-50 rounded-[30px] shadow-xl w-full h-full flex flex-col justify-center items-start px-16">
+                    <div class="text-3xl font-bold text-center mb-4">
+                        No More Juggling Note Apps or Transcripts, It’s All Built In. </div>
+                    <p class="text-gray-800 text-center text-lg">
+                        LookoutAI Note-Taker records, transcribes, and summarizes interviews, automatically and
+                        accurately, all within your hiring workflow.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Column 2: Image (Wider) -->
+            <div class="w-[700px] h-[350px] -ml-20 z-20 flex justify-center items-center">
+                <div class="relative w-full h-full">
+                    <img src="image (67).png" alt="Progress Visual" class="w-full h-full object-cover rounded-[30px]" />
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center m-10">
+            <button
+                class="flex items-center gap-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full text-sm font-medium">
+                Start a Free Trial
+                <img src="arrow.png" alt="arrow" class="h-4 w-4" />
+            </button>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- Heading -->
+
+
+    <div class="flex gap-4 flex-wrap justify-center mb-10 mt-5">
+        <!-- Techlify -->
+        <div class="relative flex flex-col items-center justify-center p-2 w-[200px] h-[50px] rounded-[30px] bg-blue-50 overflow-hidden button-item"
+            data-index="0">
+            <img src="image (17).png" alt="Techlify"
+                class="max-h-full object-contain z-10 transition-all duration-300 ease-in-out button-image grayscale" />
+            <div class="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-blue-50/5 to-transparent z-20"></div>
+        </div>
+
+        <!-- Marketly -->
+        <div class="flex flex-col items-center justify-center p-2 w-[200px] h-[50px] rounded-[30px] border border-blue-200 bg-blue-50 button-item active"
+            data-index="1">
+            <img src="image (18).png" alt="Marketly"
+                class="max-h-full object-contain transition-all duration-300 ease-in-out button-image transform scale-110" />
+        </div>
+
+        <!-- Realtor -->
+        <div class="flex flex-col items-center justify-center p-2 w-[200px] h-[50px] rounded-[30px] bg-blue-50 button-item"
+            data-index="2">
+            <img src="image (19).png" alt="Realtor"
+                class="max-h-full object-contain transition-all duration-300 ease-in-out button-image grayscale" />
+        </div>
+
+        <!-- Financely -->
+        <div class="flex flex-col items-center justify-center p-2 w-[200px] h-[50px] rounded-[30px] bg-blue-50 button-item"
+            data-index="3">
+            <img src="image (23).png" alt="Financely"
+                class="max-h-full object-contain transition-all duration-300 ease-in-out button-image grayscale" />
+        </div>
+
+        <!-- CRM Pro -->
+        <div class="relative flex flex-col items-center justify-center p-2 w-[200px] h-[50px] rounded-[30px] bg-blue-50 overflow-hidden button-item"
+            data-index="4">
+            <img src="image (21).png" alt="CRM Pro"
+                class="max-h-full object-contain z-0 transition-all duration-300 ease-in-out button-image grayscale" />
+            <!-- Right-side gradient overlay -->
+            <div class="absolute top-0 right-0 h-full w-1/2 bg-gradient-to-l from-blue-50 to-transparent z-0"></div>
+        </div>
+    </div>
+    <div class="text-center mt-20 mb-4 font-medium text-sm text-gray-600 ">
+    </div>
+    <div class="bg-white p-6 rounded-lg mt-8">
+        <h2 class="text-[50px] font-bold text-center mb-2">Client Success Stories</h2>
+        <p class="text-center text-[25px] text-gray-600 ">
+            Explore real-life success stories from businesses that have<br>
+            achieved remarkable results using Lookkout AI.
+        </p>
+    </div>
+    <!-- Testimonial Slideshow Container -->
+
+
+    <div class="bg-gray-50 ">
+
+        <!-- Testimonial Slideshow Container -->
+        <div class="max-w-6xl mx-auto">
+            <!-- Slideshow Container -->
+            <div class="relative overflow-hidden">
+                <!-- Slides Wrapper -->
+                <div class="flex items-center justify-center relative h-[650px]" id="testimonialContainer">
+
+                    <!-- All Cards -->
+                    <!-- Card 1 - Techlify -->
+                    <div class="testimonial-card absolute w-[500px] h-[550px] bg-white rounded-[30px] shadow-lg overflow-hidden"
+                        data-index="0">
+                        <!-- Header with logo and company -->
+                        <div
+                            class="bg-blue-50 p-6 h-[375px] flex flex-col justify-center items-center rounded-t-[30px]">
+                            <img src="image (21).png" alt="CRM Pro" class="w-32 h-auto mb-5">
+                            <div class="text-xl font-normal text-center text-gray-700 leading-relaxed">
+                                The platform has completely transformed our hiring process. With robust features and
+                                an intuitive
+                                interface, we've seen a 40% boost in lead conversion and sales efficiency.
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+
+                        <div
+                            class="bg-gray-100 h-[175px] flex flex-col items-center justify-center text-center rounded-b-[30px]">
+                            <!-- Profile Image -->
+                            <div>
+                                <img src="image12.png" alt="CRM Pro" class="w-16 h-auto">
+
+                            </div>
+                            <!-- Name -->
+                            <div class="font-semibold text-[20px] text-gray-800">Rachel Nguyen</div>
+                            <!-- Title -->
+                            <div class="text-gray-600">VP Operations, Techlify</div>
+                        </div>
+
+                    </div>
+                    <!-- Card 2 - Techlify -->
+                    <div class="testimonial-card absolute w-[500px] h-[550px] bg-white rounded-[30px] shadow-lg overflow-hidden"
+                        data-index="0">
+                        <!-- Header with logo and company -->
+                        <div
+                            class="bg-blue-50 p-6 h-[375px] flex flex-col justify-center items-center rounded-t-[30px]">
+                            <img src="image (18).png" alt="CRM Pro" class="w-32 h-auto mb-5">
+                            <div class="text-xl font-normal text-center text-gray-700 leading-relaxed">
+                                The platform has completely transformed our hiring process. With robust features and
+                                an intuitive
+                                interface, we've seen a 40% boost in lead conversion and sales efficiency.
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+
+                        <div
+                            class="bg-gray-100 h-[175px] flex flex-col items-center justify-center text-center rounded-b-[30px]">
+                            <!-- Profile Image -->
+                            <div>
+                                <img src="image42.png" alt="CRM Pro" class="w-16 h-auto">
+
+                            </div>
+                            <!-- Name -->
+                            <div class="font-semibold text-[20px] text-gray-800">Rachel Nguyen</div>
+                            <!-- Title -->
+                            <div class="text-gray-600">VP Operations, Techlify</div>
+                        </div>
+
+                    </div>
+                    <!-- Card 3 - Techlify -->
+                    <div class="testimonial-card absolute w-[500px] h-[550px] bg-white rounded-[30px] shadow-lg overflow-hidden"
+                        data-index="0">
+                        <!-- Header with logo and company -->
+                        <div
+                            class="bg-blue-50 p-6 h-[375px] flex flex-col justify-center items-center rounded-t-[30px]">
+                            <img src="image (17).png" alt="CRM Pro" class="w-32 h-auto mb-5">
+                            <div class="text-xl font-normal text-center text-gray-700 leading-relaxed">
+                                The platform has completely transformed our hiring process. With robust features and
+                                an intuitive
+                                interface, we've seen a 40% boost in lead conversion and sales efficiency.
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+
+                        <div
+                            class="bg-gray-100 h-[175px] flex flex-col items-center justify-center text-center rounded-b-[30px]">
+                            <!-- Profile Image -->
+                            <div>
+                                <img src="image25.png" alt="CRM Pro" class="w-16 h-auto">
+
+                            </div>
+                            <!-- Name -->
+                            <div class="font-semibold text-[20px] text-gray-800">Rachel Nguyen</div>
+                            <!-- Title -->
+                            <div class="text-gray-600">VP Operations, Techlify</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Navigation buttons positioned below the center card -->
+    <div class="flex justify-center items-center gap-4 mt-8">
+        <button
+            class="bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all border border-gray-200 w-12 h-12 flex items-center justify-center"
+            id="prevTestimonial">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <button
+            class="bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all border border-gray-200 w-12 h-12 flex items-center justify-center"
+            id="nextTestimonial">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="max-w-6xl mx-auto mt-20 mb-20 px-4">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-5xl font-bold text-gray-900">Still Curious? We've Got You.</h2>
+            <button
+                class="px-10 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full text-[18px] font-semibold hover:from-purple-600 hover:to-blue-600 transition">
+                Get in Touch
+            </button>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2 mb-8 justify-center">
+            <button
+                class="filter-btn active px-6 py-2 bg-blue-500 text-white rounded-full text-sm font-medium transition hover:bg-blue-600"
+                data-filter="all">
+                Getting Started
+            </button>
+            <button
+                class="filter-btn px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium transition hover:bg-gray-300"
+                data-filter="security">
+                Security & Safety
+            </button>
+            <button
+                class="filter-btn px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium transition hover:bg-gray-300"
+                data-filter="fees">
+                Fees & Charges
+            </button>
+            <button
+                class="filter-btn px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium transition hover:bg-gray-300"
+                data-filter="fees">
+                Fees & Charges
+            </button>
+            <button
+                class="filter-btn px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium transition hover:bg-gray-300"
+                data-filter="technical">
+                Technical Support & Assistance
+            </button>
+            <button
+                class="filter-btn px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium transition hover:bg-gray-300"
+                data-filter="regulation">
+                Regulation & Compliance
+            </button>
+        </div>
+
+        <div class="space-y-5" id="faqContainer">
+            <!-- Getting Started FAQ Items -->
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="all">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>What makes Lookout AI different from traditional ATS tools?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>Utilize AI to predict customer behavior, sales trends, and identify opportunities</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Leverage the CRM's reporting and analytics tools to gain insights.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Identify opportunities, analyze performance, and make data-driven decisions.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Take action based on the data to enhance relationships, sales, and business
+                                success.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="all">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>Can I integrate Lookout AI with my existing HR systems?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>Yes, Lookout AI offers seamless integration with popular HR platforms.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Connect with existing HRIS, payroll, and applicant tracking systems.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>API-first architecture enables custom integrations.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Sync data in real-time across all your HR tools.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="all">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>Is the free trial really free?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>Absolutely! You can try all premium features with no commitment.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>No credit card required to start your trial.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Access to all features for 14 days completely free.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Cancel anytime with no questions asked.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Security & Safety FAQ Items -->
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="security">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>How secure is my candidate data?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>We implement enterprise-grade security measures to protect your sensitive data.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>End-to-end encryption for all data in transit and at rest.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>SOC 2 Type II certified and GDPR compliant.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Regular security audits and penetration testing.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Fees & Charges FAQ Items -->
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="fees">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>What are your pricing plans?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>We offer flexible pricing plans to suit businesses of all sizes.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Starter plan: $29/month for small teams (up to 10 users).</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Professional plan: $99/month for growing companies.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Enterprise plan: Custom pricing for large organizations.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Technical Support FAQ Items -->
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="technical">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>What support options are available?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>We offer comprehensive support options to ensure your success.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>24/7 email support for all plans.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Live chat support during business hours.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Dedicated account manager for Enterprise plans.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Regulation & Compliance FAQ Items -->
+            <div class="faq-item bg-blue-50 rounded-[20px] overflow-hidden" data-category="regulation">
+                <button
+                    class="faq-toggle w-full px-6 py-4 text-left text-[24px] text-gray-700 font-normal flex justify-between items-center focus:outline-none hover:bg-blue-100 transition">
+                    <span>Is Lookout AI compliant with hiring regulations?</span>
+                    <span class="toggle-icon text-gray-500 text-2xl">+</span>
+                </button>
+                <div class="faq-content px-6 pb-6 text-gray-700 space-y-3 hidden">
+                    <p>Yes, we ensure full compliance with employment and data protection laws.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>EEOC compliance for fair hiring practices.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>GDPR and CCPA compliant data handling.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <div
+                                class="w-[24px] h-[24px] bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span>Regular compliance audits and updates.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class=" flex items-center justify-center ">
+        <!-- Container with Image Background and Text Overlay -->
+        <div class="relative w-full max-w-6xl h-[400px] rounded-3xl overflow-hidden shadow-lg mt-20 mb-20">
+
+            <!-- Background Image -->
+            <img src="image (48).png" alt="3D Character" class="absolute inset-0 w-full h-full object-cover" />
+
+            <!-- Overlay Content -->
+            <div class="absolute inset-0 flex flex-col items-end justify-center pr-10 text-right z-10">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-lg">
+                    Ready to transform your<br> hiring process?
+                </h1>
+                <button
+                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full text-lg font-semibold shadow-lg hover:from-purple-700 hover:to-blue-600 transition">
+                    Book Free Trial
+                </button>
+            </div>
+
+            <!-- Optional: Dark overlay for better text readability -->
+
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            // FAQ toggle functionality
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.toggle-icon');
+
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.textContent = '−';
+                        this.parentElement.classList.add('expanded');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.textContent = '+';
+                        this.parentElement.classList.remove('expanded');
+                    }
+                });
+            });
+
+            // Filter functionality
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active filter button
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-blue-500', 'text-white');
+                        b.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+
+                    this.classList.add('active', 'bg-blue-500', 'text-white');
+                    this.classList.remove('bg-gray-200', 'text-gray-700');
+
+                    // Filter FAQ items
+                    faqItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            // Add fade in animation
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                            }, 100);
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+    <footer class="bg-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-24">
+            <!-- Logo & Description -->
+            <div class="space-y-4">
+                <img src="image (37).png" class="w-48 h-auto" alt="Descriptive alt text">
+                <p class="text-gray-700 text-sm">
+                    Trusted by recruiters to automate, personalize, and optimize hiring for smarter, faster
+                    decisions
+                    with Lookout AI.
+                </p>
+                <div class="flex items-center space-x-2 text-gray-700 text-sm">
+                    <img src="image (38).png" class="w-8 h-auto" alt="Descriptive alt text">
+
+                    <span>4700 NW 12th Pl, Miami, Florida,<br>Silver Business Point, Surat</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-700 text-sm">
+                    <img src="image (39).png" class="w-8 h-auto" alt="Descriptive alt text">
+
+                    <a href="mailto:info@gmail.com" class="hover:underline">info@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-gray-900 text-[25px] font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-700 text-1sm">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Features</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h4 class="text-gray-900 text-[25px] font-semibold mb-4">Company</h4>
+                <ul class="space-y-2 text-gray-700 text-1sm">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact us</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Demo -->
+            <div class="space-y-4">
+                <input type="text"
+                    class="w-full px-4 py-2 rounded-full bg-blue-50 text-sm placeholder-gray-400 focus:outline-none"
+                    placeholder="Enter your message" />
+                <button
+                    class="w-full px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full text-sm font-medium">
+                    Book a free demo
+                </button>
+                <p class="text-gray-700 text-1xs">
+                    if you have any queries, please reach out in <a href="mailto:info@lookoutai.io"
+                        class="underline">info@lookoutai.io</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 mt-8">
+            <div class="bg-blue-50 rounded-full py-4 px-6 flex items-center justify-between text-gray-700 text-sm">
+                <span>© 2024 Lookout AI</span>
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="hover:opacity-75">
+                        <!-- LinkedIn Icon -->
+                        <img src="image (40).png" class="w-6 h-auto" alt="Descriptive alt text">
+
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <!-- Instagram Icon -->
+                        <img src="image (43).png" class="w-6 h-auto" alt="Descriptive alt text">
+
+                    </a>
+                    <a href="#" class="hover:opacity-75">
+                        <!-- X (Twitter) Icon -->
+                        <img src="image (44).png" class="w-4 h-auto" alt="Descriptive alt text">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
